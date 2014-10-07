@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -7,10 +7,46 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
+    <header>
+        <div class="header">
+            <h1>Brandy Cesalie Lucero</h1>
+            <nav>
+                &nbsp;||&nbsp;
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                &nbsp;||&nbsp;
+                    <a href="@Url.Action("Index", "About")">About</a>
+                &nbsp;||&nbsp;
+                    <a href="@Url.Action("Index", "Work")">Work</a>
+                &nbsp;||&nbsp;
+                    <a href="@Url.Action("Index", "Contact")">Contact</a>
+                &nbsp;||&nbsp;
+            </nav>
+        </div>
+    </header>
 <body>
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
+    <footer>
+        <div class="footer">
+            <p>Copyright 2014 Brandy Lucero</p>
+            <nav>
+                &nbsp;||&nbsp;
+                <a href="@Url.Action("Index", "Home")">Home</a>
+
+                &nbsp;||&nbsp;
+                <a href="@Url.Action("Index", "About")">About</a>
+
+                &nbsp;||&nbsp;
+                <a href="@Url.Action("Index", "Work")">Work</a>
+
+                &nbsp;||&nbsp;
+                <a href="@Url.Action("Index", "Contact")">Contact</a>
+
+                &nbsp;||&nbsp;
+            </nav>
+        </div>
+    </footer>
 </html>

@@ -1,8 +1,7 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-<!doctype html> 
-<html>    
+<!doctype html>    
 <head>
     <title>Home Page</title>
     </head>
@@ -10,23 +9,46 @@
     <div class="homepage-content">
 
         <div class="div1">
-            <img src="http://coverlayout.com/facebook/covers/neg_mind/neg_mind.jpg" alt="Home Page Image" />
+         <div class="image active"></div>
+            <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="Home Page Image 1" />
+       </div>
+
+         <div class="image hide">
+         <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="Home Page Image 2" />
         </div>
 
+        <div class="image hide">
+            <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="Home Page Image 3" />
+            </div>
+        <div class="image hide">
+              <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="another image " />
+            </div>
+        <div class="image hide">
+        <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="another image" />
+        </div>
+        <div class="image hide">
+              <img src="http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg" alt="another image" />
+        </div>
+        </div>
+    <div class="home-boxes">
         <div class="div2">
             <h2 align="center">About Me</h2>
-            <p> I am a Colorado Native. I am an oldie but goodie. I have a strong love for technology. Technology was my first love. I will fill you in more about myself later. </p>
+            <p> I am a Colorado Native. I am an oldie but goodie. I have a strong love for technology. Technology was my first love. </p>
+        <p><a href="@Url.Action("Index", "About")">Click here</a>Want to find out more!</p>
         </div>
+
         <div class="div3">
-            <h2 align="center">Work</h2>
-            <p>At SeedPaths I have learn a lot and her are some of my creative work examples.</p>
-        </div>
-        <div class ="div4">
-            <h2 align="center">Contact</h2>
-            <p>Lets keep in contact</p>
-        </div>
-    </div>
+    <h2 align="center">Work</h2>
+<p>I have been working on many project at SeedPaths. I ahve been working with C#.NET, JavaScript, jQuery, ASP.NET MVC,HTML,CSS3 and T-SQL. </p>
+<p><a href="@Url.Action("Index", "Work")">Click here</a> to check out some samples of my work.</p>
+</div>
 
+<div class="div4">
+<h2 align="center">Contact</h2>
+<p>If you would like to contact me please don't hesitate!</p>
+<p><a href="@Url.Action("Index","Contact")">Click here</a>To leave me a message.</p>
+</div>
+</div>
+</div>
 </body>
-   </html>
-
+</html>

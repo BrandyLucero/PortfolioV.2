@@ -2,7 +2,6 @@
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
-    background-color: #fff;
 }
 
 header, footer, nav, section {
@@ -59,3 +58,223 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+body {
+    margin: 0;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/purple-butterfly-backgrounds.jpg) content-box repeat;
+}
+p {
+    text-align: center;
+    margin: 6%;
+    word-wrap: break-word;
+}
+.header {
+    border: 1px solid #f3f2fc;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg) content-box repeat;
+}
+    .header nav {
+        color: #c8c1c1;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+        .header nav a:link {
+            color: #c8c1c1;
+        }
+        .header nav a:visited {
+            color: #f3f2fc;
+        }
+        .header nav a:hover {
+            color: #3192cb;
+        }
+        .header nav a:active {
+            color: #98acf5;
+        }
+ .header h1 {
+        font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+        color: #c8c1c1;
+        text-align: center;
+        padding: 10px;
+        margin-top: 5px;
+    }
+.footer {
+    color: #c8c1c1;
+    border: 1px solid #f3f2fc;
+    height: 60px;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg) content-box repeat;
+    margin-top: 5px;
+    align-content: bottom;
+    }
+    .footer p {
+        font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+        display: inline-block;
+        margin: auto 5px auto 5px;
+        padding: 20px 5px 20px 5px;
+     }
+    .footer nav {
+        float: right;
+        display: inline-block;
+        margin: auto 5px auto 5px;
+        padding: 20px 5px 20px 5px;
+    }
+        .footer nav a:link {
+            color: #c8c1c1;
+        }
+        .footer nav a:visited {
+            color: #f3f2fc;
+
+        }
+        .footer nav a:hover {
+            color: #3192cb;
+        }
+        .footer nav a:active {
+            color: #98acf5;
+        }
+        .homepage-content a:link {
+            color: #c8c1c1;
+         }
+.homepage-content a:visited {
+    color: #f3f2fc;
+}
+.homepage-content a:hover {
+    color: #3192cb;
+}
+.homepage-content a:active {
+    color: #98acf5;
+}
+.div1 {
+    text-align: center;
+    width: 40%;
+    margin: 15px auto 15px auto;
+    border: 2px solid #f3f2fc;
+}
+    .div1 img {
+        width: 100%;
+        text-align: center;
+    }
+   .div2 {
+    color: #c8c1c1;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) content-box no-repeat;
+    border: 1px solid #f3f2fc;
+    width: 28%;
+    height: 250px;
+    display: inline-block;
+    margin: 2%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.div3 {
+    color: #c8c1c1;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) content-box no-repeat;
+    border: 1px solid #f3f2fc;
+    width: 28%;
+    height: 250px;
+    display: inline-block;
+    margin: 2%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.div4 {
+    color: #c8c1c1;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) content-box no-repeat;
+    border: 1px solid #f3f2fc;
+    width: 28%;
+    height: 250px;
+    display: inline-block;
+    margin: 2%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.about-pic {
+    text-align: left;
+    margin: 30px;
+}
+
+.about-content {
+    text-align: right;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/purple-butterfly-backgrounds.jpg) content-box repeat;
+    background-size: 100%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.about-content p { 
+    color: #f3f2fc;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.about-content h2 {
+    color:#f3f2fc;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.work-content {
+    text-align: center;
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/purple-butterfly-backgrounds.jpg) content-box repeat;
+}
+
+.work-content h2 {
+    padding-top: 30px;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+.img {
+    margin: 30px;
+    border: 5px ridge #f3f2fc;
+    width: 270px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    background: #232323 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) padding-box no-repeat;
+}
+
+.img iframe {
+    display: inline;
+    border: 3px ridge #c8c1c1;
+}
+
+.img img {
+    display: inline;
+    border: 3px ridge #c8c1c1;
+}
+
+.img p {
+    color: #c8c1c1;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    padding-top: 5px;
+}
+
+.thankyou-content {
+    background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) content-box repeat;
+    background-size: 100%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.thankyou-content p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.thankyou-content h2 {
+    padding-top: 20px;
+}
+
+.image.hide {
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
+
+
+
+
+
+
+        
+        
+
+

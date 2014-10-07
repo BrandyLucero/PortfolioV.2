@@ -1,20 +1,21 @@
-﻿model Portfolio.Models.Contact
-@{
-    Layout = null;
-}
+﻿@model Portfolio.Models.Contact
+    @{
+        
+        Layout = null;
+    }
+
 <!DOCTYPE html>
 <head>
     <title>Contact Page</title>
     <style>
         .contactform {
-        background: #808080 url(http://static3.grsites.com/archive/textures/pa/pa019.jpg) content-box repeat;
-        {
+        background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/purple-butterfly-backgrounds.jpg) content-box repeat;
         background-size:100%;
         font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
         }
         .contact-header {
         border: 1px solid #ffb400;
-        background: #808080 url(http://static1.grsites.com/archive/textures/pa/pa065.gif) content-box repeat;
+        background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/purple-butterfly-backgrounds.jpg) content-box repeat;
         }
         .contact-header img {
         display: inline-block;
@@ -46,14 +47,16 @@
         text-align: center;
         padding: 10px;
         margin-top: 5px;
+
         }
+
         .footer{
-        color: #c8c1c1
+        color: #c8c1c1;
         border: 1px solid #ffb400;
         height: 60px;
-        background: #808080 url http://static3.grsites.com/archive/textures/pa/pa019.jpg) content-box repeat;
+        background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/black-butterfly-backgrounds.jpg) content-box repeat;
         margin-top: 5px;
-        align-content: bottom;
+       
         }
         .footer p {
         font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
@@ -79,12 +82,14 @@
         .footer nav a:active{
         color: #98acf5
         }
+        .form {
+        }
+
         </style>
 </head>
 <header>
     <div class="contact-header">
-        <h1>Brandy's Page</h1>
-        <img src="https://z-1-scontent-b.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/230419_10150187766777566_2043087_n.jpg?oh=f6fccb7fa9cc79428e50473da603cae7&oe=54BB4645" width="200" height="130" float="left" />
+        <h1>Brandy Lucero</h1>
         <nav>
             &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "Home")">Home</a>
@@ -93,45 +98,50 @@
                &nbsp;||&nbsp;
            <a href="@Url.Action("Index", "Work")">Work</a>
                &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Careers")">Careers</a>
+               &nbsp;||&nbsp;
            <a href="@Url.Action("Index", "Contact")">Contact</a>
             &nbsp;||&nbsp;
         </nav>
     </div>
 </header>
 <body>
+    <form action="/" method="post"></form>
     <div class="contactform">
         <h2>Contact Form</h2>
-        <form action="@Url.Action("Index", "Contact")" method="post">
+        <form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
+
             <div>
                 <!--create a label-->
                 @Html.LabelFor(x => x.FirstName)
                 <!--create text box-->
-                @Html.TextAreaFor(x => x.FirstName)
+                @Html.TextBoxFor(x => x.FirstName)
                 <!--create a message-->
                 @Html.ValidationMessageFor(x=> x.FirstName)                                                                                                                                
             </div>
-                    <div>
+             <div>
                 <!--create a label-->
                 @Html.LabelFor(x => x.LastName)
                 <!--create text box-->
-                @Html.TextAreaFor(x => x.LastName)
+                @Html.TextBoxFor(x => x.LastName)
                 <!--create a message-->
                 @Html.ValidationMessageFor(x=> x.LastName)                                                                                                                                
             </div>
-                    <div>
+
+              <div>
                 <!--create a label-->
                 @Html.LabelFor(x => x.EmailAddress)
                 <!--create text box-->
-                @Html.TextAreaFor(x => x.EmailAddress)
+                @Html.TextBoxFor(x => x.EmailAddress)
                 <!--create a message-->
                 @Html.ValidationMessageFor(x=> x.EmailAddress)  
                                                                                                                                                       
             </div>
-                   <div>
+               <div>
                 <!--create a label-->
                 @Html.LabelFor(x => x.ContactNumber)
                 <!--create text box-->
-                @Html.TextAreaFor(x => x.ContactNumber)
+                @Html.TextBoxFor(x => x.ContactNumber)
                 <!--create a message-->
                 @Html.ValidationMessageFor(x=> x.ContactNumber)  
                                                                                                                                                       
@@ -143,27 +153,29 @@
                 @Html.TextAreaFor(x => x.Comment)
                 <!--create a message-->
                 @Html.ValidationMessageFor(x=> x.Comment) 
-                 </div>
-                 </div>
+            </div>
+     
             <input type="submit" value="Submit"/>
-    </form>
-    @*add a reference to jQuery Validation this is the javascript that actually performs our validation using
+   </form>
+
+    @*add a reference to jQuery Validation this is the javascript that actually performs our validation using jQuery*@
     @section Scripts{
     @Scripts.Render("~/bundles/jqueryval")
     }
+    
     </body>
     <footer>
-    <div class="footer">
-    <p>Copyright 2014 Brandy Lucero from Denver Colorado</p>
+        <div class="footer">
+    <p>Copyright 2014 Brandy Lucero</p>
     <nav>
     &nbsp;||&nbsp;
     <a href="@Url.Action("Index", "Home")">Home</a>
    &nbsp;||&nbsp;
-    <a href="@Url.Action("Index", "About")">Home</a>
+    <a href="@Url.Action("Index", "About")">About</a>
        &nbsp;||&nbsp;
-    <a href="@Url.Action("Index", "Work")">Home</a>
+    <a href="@Url.Action("Index", "Work")">Work</a>
        &nbsp;||&nbsp;
-    <a href="@Url.Action("Index", "Contact")">Home</a>
+    <a href="@Url.Action("Index", "Contact")">Contact</a>
      &nbsp;||&nbsp;
     </nav>
     </div>
