@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Work Page";
 }
 
 <!DOCTYPE html>
@@ -7,13 +7,19 @@
     <head>
         <title>Work Page</title>
     </head>
+
     <body>
         <div ="work-content">
             <h2 align="center">Samples Of My Work</h2>
             <br />
-            <div class="img">
-                <img src="http://www.timelinecovers.pro/covers-images/thumbs/Always%20be%20positive.jpg" alt="Positive Photo 1" width="250" height="180"/>
-                <p>Work Sample 1</p>
+            <h3 >Here are 4 games</h3>
+            <div class="img" id="GuessThatNumber">
+                <div class="image active"><img src="@Url.Content("~/Content/images/GuessThatNumber1.png")/>" alt="Guess that number intro"  width="250" height="180" /></div>
+                <div class="image hide"><img src="@Url.Content("~/Content/images/GuessThatNumber2.png")/>" alt="Guess that number 2"  width="250" height="180" /></div>
+                <div class="image hide"><img src="@Url.Content("~/Content/images/GuessThatNumber3.png")/>" alt="Guess that number 3"  width="250" height="180" /></div>
+                <div class="image hide"><img src="@Url.Content("~/Content/images/GuessThatNumber4.png")/>" alt="Guess that number 4"  width="250" height="180" /></div>
+                <p><a href="@Url.Action("GuessThatNumber","Work")"></a></p>
+
             </div>
             <div class="img">
                 <img src="http://www.freegreatimages.com/wp-content/uploads/2014/06/life-quotes-facebook-covers-be-the-change-3.jpg" alt="Positive Photo 2" width="250" height="180"/>
