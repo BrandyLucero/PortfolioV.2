@@ -102,7 +102,7 @@ p {
     height: 60px;
     background: #808080 url(http://bigbackground.com/wp-content/uploads/2013/04/butterfly-wallpaper.jpg) content-box repeat;
     margin-top: 5px;
-    align-content: bottom;
+    text-align: center;
     }
     .footer p {
         font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
@@ -185,7 +185,7 @@ p {
 }
 
 .about-pic {
-    text-align: left;
+    text-align: center;
     margin: 30px;
 }
 

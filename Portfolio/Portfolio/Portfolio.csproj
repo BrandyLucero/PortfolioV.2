@@ -131,8 +131,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactForm.cs" />
-    <Compile Include="Models\ContactValidation.cs" />
+    <Compile Include="Models\Contact.cs">
+      <DependentUpon>Contacts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contacts.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contacts.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contacts.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contacts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contacts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contacts.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactsValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +226,23 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <EntityDeploy Include="Models\Contacts.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Contacts.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Contacts.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Contacts.edmx</DependentUpon>
+      <LastGenOutput>Contacts.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Contacts.edmx.diagram">
+      <DependentUpon>Contacts.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Contacts.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Contacts.edmx</DependentUpon>
+      <LastGenOutput>Contacts.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -240,8 +274,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Thankyou.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
